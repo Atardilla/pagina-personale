@@ -1,0 +1,163 @@
+html{
+  scroll-behavior: smooth;
+  font-size: 22px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: #FB1A1A;
+  transform: rotate(10deg) scale(0.95, 0.95);
+}
+
+.div-selfie {
+  position: absolute;
+  right: 0;
+  bottom: 13%;
+}
+
+.top-part{
+  background: rgb(239,160,11);
+  background: linear-gradient(355deg, rgba(239,160,11,0.270935960591133) 0%, rgba(244,91,105,0.32512315270935965) 51%, rgba(64,98,187,0.20197044334975367) 93%); 
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.top-part .greetings{
+  font-family: "Rubik", sans-serif;
+  font-size: 1.5em;
+  font-weight:bolder;
+  padding: 7vh 7vw;
+  text-align: center;
+  color: #514457;
+  
+}
+
+.top-part .name{
+  display: none;
+}
+
+.top-part span{
+  color: #FB1A1A;
+}
+
+.bottom-part{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom-part .invitation-to-scroll{
+  font-family: "Prompt", sans-serif;
+  color: #514457;
+  font-size: 0.7em;
+  font-weight:bolder;
+  padding: 20px 10vw;
+}
+
+.div-chevron-down i{
+  color: #514457;
+}
+
+.div-chevron-down i:hover{
+  color: #FB1A1A;
+  transform: rotate(10deg) scale(0.95, 0.95);
+}
+
+.bottom-part .div-chevron-down{
+  text-align: center;
+  margin: -20px 0 180px;
+}
+
+.bio-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.bottom-part .bio-container p{
+  font-family: "Pontano Sans", sans-serif;
+  padding: 20px;
+  color: #514457;
+  max-width: 600px;
+
+}
+
+.socials{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 400px;
+  width: 50%;
+}
+
+.socials .social-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 10px 10px;
+}
+
+.social-icon i{
+  font-size: 3em;
+  color: #514457;
+}
+.social-icon i:hover{
+  color: #FB1A1A;
+  transform: rotate(10deg) scale(0.95, 0.95);
+}
+
+@media only screen and (min-width: 400px) and (max-width:925px){
+
+  .top-part .name{
+    display: inline;
+    word-wrap: break-word;
+    font-family: "Prompt", sans-serif;
+    color: white;
+    font-size: 6.5em;
+    padding: 30px;
+    line-height: 0.85em;
+    overflow:unset;
+    width: 90%;
+  }
+
+  .br-only-on-mobile{
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: 926px){
+
+  .top-part .name{
+    display: inline;
+    word-wrap: break-word;
+    font-family: "Prompt", sans-serif;
+    color: white;
+    font-size: 6.5em;
+    padding: 30px;
+    line-height: 0.85em;
+    overflow:unset;
+    width: 90%;
+  }
+
+  .br-only-on-mobile{
+    display: none;
+  }
+
+  .socials .social-icon{
+  width: 20%;
+  }
+}
