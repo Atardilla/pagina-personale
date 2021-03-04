@@ -18,6 +18,41 @@ a:hover{
   transform: rotate(10deg) scale(0.95, 0.95);
 }
 
+i{
+  color: #514457;
+}
+
+i:hover{
+  color: #FB1A1A;
+  transform: rotate(10deg) scale(0.95, 0.95);
+}
+
+ul{
+  list-style:none;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(239, 159, 11, 0.123);
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.home i{
+  font-size: 1.5em;
+}
+
+.item{
+  font-size: 0.7em;
+  font-family: "Rubik", sans-serif;
+  margin: 10px;
+}
+
 .div-selfie {
   position: absolute;
   right: 0;
@@ -35,7 +70,7 @@ a:hover{
 
 }
 
-.top-part .greetings{
+.greetings{
   font-family: "Rubik", sans-serif;
   font-size: 1.5em;
   font-weight:bolder;
@@ -65,15 +100,6 @@ a:hover{
   font-size: 0.7em;
   font-weight:bolder;
   padding: 20px 10vw;
-}
-
-.div-chevron-down i{
-  color: #514457;
-}
-
-.div-chevron-down i:hover{
-  color: #FB1A1A;
-  transform: rotate(10deg) scale(0.95, 0.95);
 }
 
 .bottom-part .div-chevron-down{
@@ -112,11 +138,32 @@ a:hover{
 
 .social-icon i{
   font-size: 3em;
-  color: #514457;
 }
-.social-icon i:hover{
-  color: #FB1A1A;
-  transform: rotate(10deg) scale(0.95, 0.95);
+
+.second-page{
+  background: rgb(239,160,11);
+  background: linear-gradient(355deg, rgba(239,160,11,0.270935960591133) 0%, rgba(244,91,105,0.32512315270935965) 51%, rgba(64,98,187,0.20197044334975367) 93%); 
+}
+
+.portfolio{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.iframe{
+  background-color: white;
+  width: 30%;
+  min-width: 300px;
+  height: 30%;
+  min-height: 900px;
+  margin: 100px;
+}
+
+.produced-by{
+  text-align: end;
+  font-size: 0.5em;
 }
 
 @media only screen and (min-width: 400px) and (max-width:925px){
