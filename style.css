@@ -19,6 +19,10 @@ a:hover{
   transform: rotate(10deg) scale(0.95, 0.95);
 }
 
+i{
+  color: #514457;
+}
+
 i:hover{
   color: #FB1A1A;
   transform: rotate(10deg) scale(0.95, 0.95);
