@@ -1,6 +1,7 @@
 html{
   scroll-behavior: smooth;
   font-size: 22px;
+  color: #514457;
 }
 
 *{
@@ -16,10 +17,6 @@ a{
 a:hover{
   color: #FB1A1A;
   transform: rotate(10deg) scale(0.95, 0.95);
-}
-
-i{
-  color: #514457;
 }
 
 i:hover{
@@ -76,7 +73,7 @@ ul{
   font-weight:bolder;
   padding: 7vh 7vw;
   text-align: center;
-  color: #514457;
+
   
 }
 
@@ -96,7 +93,7 @@ ul{
 
 .bottom-part .invitation-to-scroll{
   font-family: "Prompt", sans-serif;
-  color: #514457;
+
   font-size: 0.7em;
   font-weight:bolder;
   padding: 20px 10vw;
@@ -115,7 +112,7 @@ ul{
 .bottom-part .bio-container p{
   font-family: "Pontano Sans", sans-serif;
   padding: 20px;
-  color: #514457;
+
   max-width: 600px;
 
 }
