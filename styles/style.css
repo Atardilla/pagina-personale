@@ -15,10 +15,9 @@ a{
   color: #514457;
 }
 
-a:hover{
-  color: #FB1A1A;
-  transform: rotate(10deg) scale(0.95, 0.95);
-}
+
+
+
 
 i{
   color: #514457;
@@ -34,24 +33,19 @@ ul{
   margin: 0;
 }
 
-.CTA-light{
-  font-weight: bolder;
-}
 
-.CTA-strong{
-  color: #FB1A1A;
-}
-
-.CTA-stronger{
-  font-weight: bolder;
-  color: #FB1A1A;
-}
 
 .header{
+  background-color: rgba(239, 159, 11, 0.123);
+  
+}
+
+.header-size{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(239, 159, 11, 0.123);
+  max-width: 1440px;
+  margin: auto;
 }
 
 .menu{
@@ -63,6 +57,8 @@ ul{
 
 .home i{
   font-size: 1.5em;
+  position: fixed;
+  top: 10px;
 }
 
 .item{
@@ -96,7 +92,6 @@ ul{
   font-weight:bolder;
   padding: 7vh 7vw;
   text-align: center;
-
 }
 
 .top-part .name{
@@ -107,14 +102,14 @@ ul{
   color: #FB1A1A;
 }
 
-.bottom-part{
+.bio-part{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.bottom-part .invitation-to-scroll{
+.bio-part .invitation-to-scroll{
   font-family: "Prompt", sans-serif;
 
   font-size: 0.7em;
@@ -122,9 +117,14 @@ ul{
   padding: 20px 10vw;
 }
 
-.bottom-part .div-chevron-down{
+ .div-chevron-down{
   text-align: center;
   margin: -20px 0 180px;
+}
+
+.div-chevron-down a:hover{
+    color: #FB1A1A;
+    transform: rotate(10deg) scale(0.95, 0.95);  
 }
 
 .bio-container{
@@ -132,7 +132,7 @@ ul{
   flex-direction: column;
   align-items: flex-start;
 }
-.bottom-part .bio-container p{
+.bio-part .bio-container p{
   font-family: "Pontano Sans", sans-serif;
   padding: 20px;
 
@@ -140,44 +140,7 @@ ul{
 
 }
 
-.input-my-edit{
-  border: none none solid none;
-}
-
-.button-personal-edit{
-  background-color: #514457;
-  border: #514457;
-  color: white;
-}
-
-.button-personal-edit:hover{
-  transform:scale(0.98, 0.98);
-  background-color: #FB1A1A;
-  border: #FB1A1A;
-  color: white;
-}
-
-.socials{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 400px;
-  width: 50%;
-}
-
-.socials .social-icon{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40%;
-  margin: 10px 10px;
-}
-
-.social-icon i{
-  font-size: 3em;
-}
-
-.second-page-body{
+.portfolio-part{
   background: rgb(239,160,11);
   background: linear-gradient(355deg, rgba(239,160,11,0.270935960591133) 0%, rgba(244,91,105,0.32512315270935965) 51%, rgba(64,98,187,0.20197044334975367) 93%); 
   
@@ -191,11 +154,10 @@ ul{
 
 
 
-.portfolio{
+.responsive-grid-container{
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 1em;
- 
 }
 
 .auto-grid {
@@ -227,6 +189,19 @@ ul{
 
 }
 
+.tech-icon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5em 0;
+  color: #514457;
+}
+
+.tech-icon i{
+  font-size: 5em;
+}
+
 .card-body{
   padding: 1em;
   font-size: 00.7em;
@@ -237,6 +212,65 @@ ul{
   font-size: 0.5em;
 }
 
+.contatti-part{
+
+  background: rgb(239,160,11);
+  background: linear-gradient(355deg, rgba(239,160,11,0.270935960591133) 0%, rgba(244,91,105,0.32512315270935965) 51%, rgba(64,98,187,0.20197044334975367) 93%); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  
+}
+
+.contatti-part .card{
+  margin: 1.5em;
+  background-color: white;
+  background: white;
+}
+
+.input-my-edit{
+  border: none none solid none;
+}
+
+.button-personal-edit{
+  background-color: #514457;
+  border: #514457;
+  color: white;
+}
+
+.button-personal-edit:hover{
+  transform:scale(0.98, 0.98);
+  background-color: #FB1A1A;
+  border: #FB1A1A;
+  color: white;
+}
+
+.socials{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 400px;
+  width: 50%;
+  margin: 2.5em;
+}
+
+.socials .social-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 10px 10px;
+}
+
+.social-icon a:hover{
+    color: #FB1A1A;
+    transform: rotate(10deg) scale(0.95, 0.95);
+}
+
+.social-icon i{
+  font-size: 3em;
+}
 
 
 @media only screen and (min-width: 400px) {
@@ -252,10 +286,6 @@ ul{
     padding: 30px;
     line-height: 0.85em;
     width: 90%;
-  }
-
-  .br-only-on-mobile{
-    display: none;
   }
 }
 
