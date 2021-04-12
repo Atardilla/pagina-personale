@@ -15,10 +15,6 @@ a{
   color: #514457;
 }
 
-
-
-
-
 i{
   color: #514457;
 }
@@ -33,11 +29,11 @@ ul{
   margin: 0;
 }
 
-
-
 .header{
-  background-color: rgba(239, 159, 11, 0.123);
-  
+  background-color: rgb(243, 226, 194);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .header-size{
@@ -158,24 +154,24 @@ ul{
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 1em;
+  display: flex;
+  flex-direction: column;
 }
 
 .auto-grid {
-  --auto-grid-min-size: 400px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 1em;  
 }
 
 
 
 .card{
-  justify-self: center;
+
   background: rgba(239, 159, 11, 0.281);
   background: linear-gradient(355deg, rgba(239,160,11,0.270935960591133) 0%, rgba(244,91,105,0.32512315270935965) 51%, rgba(64,98,187,0.20197044334975367) 93%); 
   box-shadow: 26px 35px 79px 1px rgba(166, 166, 166, 0.253);
   border-radius: 0 0 20px 20px;
-
 }
 
 .card-img-top{
