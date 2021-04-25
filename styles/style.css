@@ -70,6 +70,7 @@ ul{
 }
 
 .top-part{
+  padding-top: 100px;
   position: relative;
   background: rgb(239,160,11);
   background: linear-gradient(355deg, rgba(239,160,11,0.270935960591133) 0%, rgba(244,91,105,0.32512315270935965) 51%, rgba(64,98,187,0.20197044334975367) 93%); 
